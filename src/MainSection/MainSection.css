@@ -1,0 +1,41 @@
+.main-section {
+	border: 1px solid black;
+	display: inline-block;
+	width: 730px;
+}
+
+.main-wrapper {
+	margin-top: 35px;
+}
+
+.main-title {
+	width: 40%;
+/*	border: 1px solid black;*/
+	font-weight: 800;
+	font-size: 45px;
+	font-family: 'Inter', sans-serif;
+	display: inline-block;
+
+}
+
+.main-description {
+	width: 48%;
+/*	border: 1px solid black;*/
+	display: inline-block;
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	float: right;
+	height: 100%;
+}
+
+.main-more {
+	background-color: hsl(5, 85%, 63%);
+	width: 185px;
+	padding: 15px;
+	color: hsl(36, 100%, 99%);
+	text-align: center;
+	margin-top: 40px;
+	letter-spacing: 4px;
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+}

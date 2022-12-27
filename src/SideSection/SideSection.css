@@ -1,0 +1,23 @@
+.side-section {
+	background-color: hsl(240, 100%, 5%);
+	color: white;
+	width: 400px;
+	display: inline-block;
+	float: right;
+	height: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	font-family: 'Inter', sans-serif;
+
+}
+
+.side-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.side-description {
+	color: hsl(233, 8%, 79%);
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+}
