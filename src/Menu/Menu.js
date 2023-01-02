@@ -1,7 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Menu.css';
+import MobileMenu from '../MobileMenu/MobileMenu';
 
 export default function Menu() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	const showMenu = () => {
+		if(isOpen === false) {
+			// alert('anoikse');
+			setIsOpen(true);
+		}else {
+			// alert('kleise');
+			setIsOpen(false);
+		}
+	}
+
 	return (
 		<div className='menu-container'>
 			<div className='logo'>
@@ -15,11 +28,14 @@ export default function Menu() {
 				<li>Trending</li>
 				<li>Categories</li>
 			</ul>
-			
-			
-			
-			
-			
+
+			<MobileMenu isOpen={isOpen} setIsOpen={setIsOpen}/>
+
+			<div id='show-menu' onClick={() => showMenu()}>
+				<svg width="40" height="17" xmlns="http://www.w3.org/2000/svg">
+					<g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g>
+				</svg>
+			</div>
         </div>
 	)
 }
