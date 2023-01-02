@@ -1,7 +1,6 @@
 .main-section {
-	border: 1px solid black;
-	display: inline-block;
-	width: 730px;
+	width: 66%;
+	max-width: 730px;
 }
 
 .main-wrapper {
@@ -9,23 +8,20 @@
 }
 
 .main-title {
-	width: 40%;
-/*	border: 1px solid black;*/
-	font-weight: 800;
-	font-size: 45px;
-	font-family: 'Inter', sans-serif;
 	display: inline-block;
-
+	width: 40%;
+	font-weight: 800;
+	font-size: 55px;
+	font-family: 'Inter', sans-serif;
+	line-height: 55px;
 }
 
 .main-description {
-	width: 48%;
-/*	border: 1px solid black;*/
 	display: inline-block;
+	width: 48%;
 	font-family: 'Inter', sans-serif;
 	font-size: 15px;
 	float: right;
-	height: 100%;
 }
 
 .main-more {
@@ -38,4 +34,37 @@
 	letter-spacing: 4px;
 	font-family: 'Inter', sans-serif;
 	font-weight: 700;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.main-more:hover {
+	background-color: hsl(240, 100%, 5%);
+}
+
+@media only screen and (max-width: 749px) {
+    .main-section {
+    	width: 100%;
+    	margin-bottom: 50px;
+    }
+
+    .main-wrapper {
+		margin-top: 25px;
+    }
+
+    .main-title {
+		font-size: 43px;
+		line-height: 44px;
+		width: 100%;
+    	margin-bottom: 20px;
+    }
+
+    .main-description {
+    	width: 100%;
+    	line-height: 25px;
+    }
+
+    .main-more {
+    	margin-top: 25px;
+    }
 }

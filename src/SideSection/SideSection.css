@@ -1,23 +1,32 @@
 .side-section {
 	background-color: hsl(240, 100%, 5%);
 	color: white;
-	width: 400px;
-	display: inline-block;
-	float: right;
+	width: 31.5%;
 	height: auto;
 	padding: 20px;
 	box-sizing: border-box;
 	font-family: 'Inter', sans-serif;
-
+	order: 1;
 }
 
 .side-title {
 	font-size: 20px;
 	font-weight: bold;
+	cursor: pointer;
 }
+
+.side-title:hover {
+	color: hsl(35, 77%, 62%);
+} 
 
 .side-description {
 	color: hsl(233, 8%, 79%);
 	font-family: 'Inter', sans-serif;
 	font-weight: 400;
+}
+
+@media only screen and (max-width: 749px) {
+    .side-section {
+    	width: 100%;
+    }
 }
