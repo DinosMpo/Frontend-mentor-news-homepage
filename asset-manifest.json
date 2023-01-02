@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Frontend-mentor-news-homepage/static/css/main.b07befa1.css",
+    "main.js": "/Frontend-mentor-news-homepage/static/js/main.edf30bed.js",
+    "index.html": "/Frontend-mentor-news-homepage/index.html",
+    "main.b07befa1.css.map": "/Frontend-mentor-news-homepage/static/css/main.b07befa1.css.map",
+    "main.edf30bed.js.map": "/Frontend-mentor-news-homepage/static/js/main.edf30bed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b07befa1.css",
+    "static/js/main.edf30bed.js"
+  ]
+}
