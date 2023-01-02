@@ -1,4 +1,16 @@
 .App {
-  max-width: 1440px;
-  border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    max-width: 1110px;
+    margin: 0px auto;
+}
+
+@media only screen and (max-width: 749px) {
+    .App {
+        max-width: 344px;
+        padding: 14px;
+        padding-top: 0px;
+    }
 }
