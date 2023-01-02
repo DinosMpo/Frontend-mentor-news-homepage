@@ -5,9 +5,17 @@ export default function MainSection() {
 	return (
 		<div className='main-section'>
 			<div className='main-image'>
-				<img src='assets/images/image-web-3-desktop.jpg' 
-				style={{height: '300px', display: 'block'
-				}}/>
+				<picture>
+				  <source media="(max-width: 749px)" srcset="assets/images/image-web-3-mobile.jpg" />
+				  <source media="(min-width: 750px)" srcset="assets/images/image-web-3-desktop.jpg" />
+				  <img style={
+				  	{
+						display: 'block',
+						maxWidth: "100%"
+
+					}} src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+				</picture>
+
 			</div>
 
 			<div className='main-wrapper'>
